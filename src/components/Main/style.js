@@ -14,6 +14,16 @@ export const ConteudoPrincipal = styled.section`
   img{
     height: 430px;
   }
+
+  @media (max-width: 974px){
+    flex-direction: column-reverse ;
+  }
+
+  @media (max-width: 370px){
+    img{
+      height: 200px;
+    }
+  }
 `
 export const ConteudoPrincipalEscrito = styled.div`
      display: flex;
@@ -24,7 +34,7 @@ export const ConteudoPrincipalEscrito = styled.div`
         font-family: 'Righteous', cursive;
         font-style: normal;
         font-weight: 400;
-        font-size: 64px;
+        font-size: 4.5rem;
         line-height: 79px;
         color: #FFF2E7;  
     }
@@ -38,6 +48,15 @@ export const ConteudoPrincipalEscrito = styled.div`
 
   color: #ECD6C4;
     }
+
+    @media (max-width: 974px){
+      align-items: center;
+
+      h2{
+        text-align: center;
+      }
+    }
+
 `
 
 export const ConteudoSecundario = styled.section`
